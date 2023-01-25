@@ -1,0 +1,34 @@
+.product-section{
+    padding: 30px;
+    background-color: hsl(217deg 27% 13%);
+    .fisrt-section{
+        @media(max-width: 576px){
+            flex-direction: column;
+        }
+        .laptop{
+            p{
+                color: $White;
+            }
+        }
+        .security{
+            p{
+                color: $White;
+            }
+        }
+    }
+    .second-section{
+        @media(max-width: 576px){
+            flex-direction: column;
+        }
+        .icon-collaboration{
+            p{
+                color: $White;
+            }
+        }
+        .icon-any-file{
+            p{
+                color: $White;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@mixin border{
+    border: none;
+    border-radius: 50px;
+    background-color:$btn-primary;
+    color: $White;
+    font-size: 18px;
+}

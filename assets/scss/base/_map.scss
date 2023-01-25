@@ -1,0 +1,19 @@
+$spacing: (
+  0: 0,
+  1: 5,
+  2: 10,
+  3: 15,
+  4: 20,
+  5: 25,
+);
+@each $key, $value in $spacing {
+  .p-#{$key} {
+    padding: #{$value}px;
+  }
+  .pt-#{$key}{
+    padding-top: #{$value}px;
+  }
+  .pb-#{$key}{
+    padding-bottom: #{$value}px;
+  }
+}

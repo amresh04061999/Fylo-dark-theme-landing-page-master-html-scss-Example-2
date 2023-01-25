@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
+
 <body>
- 
+  <!-- main container -->
+  <div class="container h-100">
+    <!-- start header -->
+    <header class="header d-flex justify-content-between">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo-image">
+      </div>
+      <ul class="nav d-flex align-item-center">
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-label="feature">Features</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-label="team">Team</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-label="Sign In">Sign In</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="illustration-introduction  d-flex justify-content-center align-item-center flex-cloumn ">
+        <div class="illustration-intro">
+          <img src="./images/illustration-intro.png" alt="illustration-intro-image" class="image-responsive">
+        </div>
+        <lable class="heading pt-5">All your files in one secure location,</lable>
+        <lable class="heading">accessible anywhere.</lable>
+        <label class="pragraph pt-5">Fylo stores all your most important files in one secure location.</label>
+        <label class="pragraph">Access them wherever you need, share and collaborate with </label>
+        <label class="pragraph pb-5">friends family, and co-workers.</label>
+        <div class="button-primary">
+          <button class="btn-primary">Get Started</button>
+        </div>
+        <div class="bg-image">
+        </div>
+      </section>
+      <section class="product-section">
+        <div class="fisrt-section d-flex justify-content-around">
+          <div class="laptop d-flex align-item-center justify-content-between flex-cloumn">
+            <div class="laptop-image">
+              <img src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere-image">
+            </div>
+            <p>Access your files, anywhere</p>
+            <p> The ability to use a smartphone, tablet, or computer </p>
+            <p>to access your account means your
+              files follow you</p>
+            <p>everywhere.</p>
+          </div>
+          <div class="security d-flex align-item-center justify-content-between flex-cloumn">
+            <div class="security-image">
+              <img src="./images/icon-security.svg" alt="icon-security-image">
+            </div>
+            <p> Security you can trust</p>
+            <p> 2-factor authentication and user-controlled encryption are </p>
+              <p>just a couple of the security
+                features we allow to help </p>
+              <p>secure your files.</p>
+          </div>
+        </div>
+        <div class="second-section d-flex justify-content-around">
+          <div class="icon-collaboration  d-flex align-item-center justify-content-center flex-cloumn">
+            <div class="icon-collaboration-image ">
+              <img src="./images/icon-collaboration.svg" alt="icon-collaboration-image">
+            </div>
+            <p>Real-time collaboration
+            </p>
+            <p>Securely share files and folders with friends, family and </p>
+            <p> colleagues for live collaboration.
+              No email attachments </p>
+              <p>required.</p>
+          </div>
+          <div class="icon-any-file d-flex align-item-center justify-content-between flex-cloumn">
+            <div class="file-image">
+              <img src="./images/icon-any-file.svg" alt="icon-any-file-image">
+            </div>
+            <p> Store any type of file
+            </p>
+            <p> Whether you're sharing holidays photos or work </p>
+            <p>documents, Fylo has you covered allowing for all
+              file
+            </p>
+            <p> types to be securely stored and shared.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+
+      </section>
+    </main>
+    <!-- End header  -->
+    <footer></footer>
+  </div>
 </body>
+
 </html>
