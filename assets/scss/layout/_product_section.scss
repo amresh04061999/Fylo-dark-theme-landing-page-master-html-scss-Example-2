@@ -1,17 +1,22 @@
 .product-section{
     padding: 30px;
     background-color: hsl(217deg 27% 13%);
-    .fisrt-section{
+    .first-section{
         @media(max-width: 576px){
             flex-direction: column;
         }
         .laptop{
-            p{
+            span{
                 color: $White;
+                :first-child{
+                    font-size: 20px;
+                }
             }
+            
+            
         }
         .security{
-            p{
+            span{
                 color: $White;
             }
         }
@@ -21,12 +26,22 @@
             flex-direction: column;
         }
         .icon-collaboration{
-            p{
+            span{
                 color: $White;
             }
         }
         .icon-any-file{
-            p{
+            span{
+                color: $White;
+            }
+        }
+    }
+    .third-section{
+        @media(max-width: 576px){
+            flex-direction: column;
+        }
+        .text-sectiom{
+            span{
                 color: $White;
             }
         }

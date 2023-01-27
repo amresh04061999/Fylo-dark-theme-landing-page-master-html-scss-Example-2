@@ -1,0 +1,37 @@
+footer{
+    background-color: hsl(214deg 49% 9%);
+    padding: 200px 60px 100px 60px;
+    @media(max-width: 576px){
+        flex-direction: column;
+        padding: 100px 10px 100px 10px;
+    }
+    .first-footer-section{
+        span{
+            color: $White;
+        }
+    }
+    .second-footer-section{
+         label{
+             color: $White;
+         }
+    }
+    ul{
+        list-style: none;
+         color: $White;
+        li{
+           margin-bottom: 10px;
+        }
+    }
+    .social-media{
+        width: 35px; 
+        height: 35px;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 2px solid $White;
+        margin-right: 10px;
+        label{
+            font-size: 18px;
+            color: white;
+        }
+    }
+}   

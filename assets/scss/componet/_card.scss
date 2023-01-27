@@ -1,0 +1,28 @@
+.card-main-wrapper{
+    @media(max-width: 576px){
+        flex-direction: column;
+    }
+    .card{
+        width: 350px;
+        height: 200px;
+        background-color: hsl(220deg 29% 18%);
+        padding: 25px;
+        @media(max-width: 576px){
+            margin-top: 20px;
+        }
+        span{
+            color: $White;
+        }
+        .product-image{
+            width: 25px; 
+            height: 25px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+        .profile-text{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
