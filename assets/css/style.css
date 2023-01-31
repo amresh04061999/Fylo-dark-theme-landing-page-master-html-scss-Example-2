@@ -89,6 +89,10 @@ body {
   padding-right: 0px;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .p-1 {
   padding: 10px;
 }
@@ -117,6 +121,10 @@ body {
 .py-1 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.mt-1 {
+  margin-top: 10px;
 }
 
 .p-2 {
@@ -149,6 +157,10 @@ body {
   padding-right: 20px;
 }
 
+.mt-2 {
+  margin-top: 20px;
+}
+
 .p-3 {
   padding: 30px;
 }
@@ -177,6 +189,10 @@ body {
 .py-3 {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.mt-3 {
+  margin-top: 30px;
 }
 
 .p-4 {
@@ -209,6 +225,10 @@ body {
   padding-right: 40px;
 }
 
+.mt-4 {
+  margin-top: 40px;
+}
+
 .p-5 {
   padding: 50px;
 }
@@ -237,6 +257,10 @@ body {
 .py-5 {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.mt-5 {
+  margin-top: 50px;
 }
 
 .p-6 {
@@ -269,6 +293,10 @@ body {
   padding-right: 60px;
 }
 
+.mt-6 {
+  margin-top: 60px;
+}
+
 .p-7 {
   padding: 70px;
 }
@@ -299,6 +327,10 @@ body {
   padding-right: 70px;
 }
 
+.mt-7 {
+  margin-top: 70px;
+}
+
 .p-8 {
   padding: 80px;
 }
@@ -327,6 +359,10 @@ body {
 .py-8 {
   padding-left: 80px;
   padding-right: 80px;
+}
+
+.mt-8 {
+  margin-top: 80px;
 }
 
 .ps-1 {
@@ -361,6 +397,9 @@ body {
   font-size: 60px;
 }
 
+.card-main-wrapper {
+  margin-bottom: 200px;
+}
 @media (max-width: 576px) {
   .card-main-wrapper {
     flex-direction: column;
@@ -375,10 +414,14 @@ body {
 @media (max-width: 576px) {
   .card-main-wrapper .card {
     margin-top: 20px;
+    width: 280px;
+    height: 180px;
+    padding: 16px;
   }
 }
 .card-main-wrapper .card span {
   color: hsl(0deg, 0%, 100%);
+  font-size: 12px;
 }
 .card-main-wrapper .card .product-image {
   width: 25px;
@@ -395,7 +438,7 @@ header {
 }
 @media (max-width: 576px) {
   header {
-    padding: 15px;
+    padding: 20px;
   }
 }
 header .logo {
@@ -419,22 +462,37 @@ header .nav .nav-item .nav-link {
 }
 @media (max-width: 576px) {
   header .nav .nav-item .nav-link {
-    margin: 8px;
+    margin: 5px;
   }
 }
 
 .illustration-introduction {
   padding: 30px;
 }
-.illustration-introduction .heading {
+.illustration-introduction h1 {
   color: hsl(0deg, 0%, 100%);
   font-size: 60px;
   text-align: center;
+  padding: 10px 123px;
 }
-.illustration-introduction .pragraph {
+@media (max-width: 576px) {
+  .illustration-introduction h1 {
+    padding: 0px 0px;
+    padding-top: 20px;
+    font-size: 23px;
+  }
+}
+.illustration-introduction p {
   color: hsl(0deg, 0%, 100%);
   font-size: 26px;
   text-align: center;
+}
+@media (max-width: 576px) {
+  .illustration-introduction p {
+    padding: 0px 0px;
+    padding-top: 20px;
+    font-size: 14px;
+  }
 }
 .illustration-introduction .button-primary .btn-primary {
   padding: 20px 120px;
@@ -444,69 +502,120 @@ header .nav .nav-item .nav-link {
   color: hsl(0deg, 0%, 100%);
   font-size: 18px;
 }
+@media (max-width: 576px) {
+  .illustration-introduction .button-primary .btn-primary {
+    padding: 15px 83px;
+    margin-top: 27px;
+    font-size: 14px;
+  }
+}
 
 .product-section {
   padding: 30px;
   background-color: hsl(217deg, 27%, 13%);
 }
 @media (max-width: 576px) {
-  .product-section .first-section {
-    flex-direction: column;
+  .product-section {
+    padding: 22px;
   }
 }
-.product-section .first-section .laptop span {
-  color: hsl(0deg, 0%, 100%);
+@media (max-width: 576px) {
+  .product-section .first-section {
+    flex-direction: column;
+    padding: 22px;
+  }
 }
-.product-section .first-section .laptop span :first-child {
-  font-size: 20px;
-}
-.product-section .first-section .security span {
+.product-section .first-section .laptop h3 {
   color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.product-section .first-section .laptop p {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.product-section .first-section .security h3 {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.product-section .first-section .security p {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
 }
 @media (max-width: 576px) {
   .product-section .second-section {
     flex-direction: column;
   }
 }
-.product-section .second-section .icon-collaboration span {
+.product-section .second-section .icon-collaboration h3 {
   color: hsl(0deg, 0%, 100%);
+  text-align: center;
 }
-.product-section .second-section .icon-any-file span {
+.product-section .second-section .icon-collaboration p {
   color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.product-section .second-section .icon-any-file h3 {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.product-section .second-section .icon-any-file p {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
 }
 @media (max-width: 576px) {
   .product-section .third-section {
     flex-direction: column;
   }
 }
-.product-section .third-section .text-sectiom span {
+.product-section .third-section .text-sectiom h3 {
   color: hsl(0deg, 0%, 100%);
+  font-size: 17px;
+}
+.product-section .third-section .text-sectiom p {
+  color: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 576px) {
+  .product-section .third-section .text-sectiom p {
+    font-size: 14px;
+  }
+}
+.product-section .third-section .text-sectiom .flye-work-link {
+  color: #297575;
 }
 
 footer {
   background-color: hsl(214deg, 49%, 9%);
   padding: 200px 60px 100px 60px;
+  position: relative;
 }
 @media (max-width: 576px) {
   footer {
+    padding: 65px 26px 51px 27px;
+  }
+}
+footer .footer-wrapper {
+  margin-top: 110px;
+}
+@media (max-width: 576px) {
+  footer .footer-wrapper {
     flex-direction: column;
     padding: 100px 10px 100px 10px;
   }
 }
-footer .first-footer-section span {
+footer .footer-wrapper .first-footer-section p {
   color: hsl(0deg, 0%, 100%);
 }
-footer .second-footer-section label {
+footer .footer-wrapper .second-footer-section label {
   color: hsl(0deg, 0%, 100%);
 }
-footer ul {
+footer .footer-wrapper ul {
   list-style: none;
   color: hsl(0deg, 0%, 100%);
 }
-footer ul li {
+footer .footer-wrapper ul li {
   margin-bottom: 10px;
 }
-footer .social-media {
+footer .footer-wrapper .social-media {
   width: 35px;
   height: 35px;
   border-radius: 50px;
@@ -514,9 +623,72 @@ footer .social-media {
   border: 2px solid hsl(0deg, 0%, 100%);
   margin-right: 10px;
 }
-footer .social-media label {
+footer .footer-wrapper .social-media label {
   font-size: 18px;
   color: white;
+}
+
+.card1 {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: hsl(222deg, 26%, 15%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100px;
+}
+@media (max-width: 576px) {
+  .card1 {
+    flex-direction: column;
+    padding: 25px 10px 35px 10px;
+  }
+}
+.card1 h3 {
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 40px;
+}
+@media (max-width: 576px) {
+  .card1 h3 {
+    font-size: 20px;
+  }
+}
+.card1 p {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 576px) {
+  .card1 .button-section {
+    flex-direction: column;
+  }
+}
+.card1 .button-section input[type=text] {
+  padding: 15px 280px 15px 20px;
+  border-radius: 50px;
+  border: none;
+  margin-right: 20px;
+}
+@media (max-width: 576px) {
+  .card1 .button-section input[type=text] {
+    padding: 15px 60px 15px 20px;
+    margin-right: 0px;
+  }
+}
+.card1 .button-section .btn-2 {
+  padding: 15px 40px;
+  font-size: 15px !important;
+  border: none;
+  border-radius: 50px;
+  background-color: hsl(193deg, 59%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .card1 .button-section .btn-2 {
+    padding: 15px 55px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 .card-main-wrapper{
+    margin-bottom: 200px;
     @media(max-width: 576px){
         flex-direction: column;
     }
@@ -9,9 +10,13 @@
         padding: 25px;
         @media(max-width: 576px){
             margin-top: 20px;
+            width: 280px;
+            height: 180px;
+            padding: 16px;
         }
         span{
             color: $White;
+            font-size: 12px;
         }
         .product-image{
             width: 25px; 

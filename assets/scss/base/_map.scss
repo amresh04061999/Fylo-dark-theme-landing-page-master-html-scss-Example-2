@@ -33,6 +33,9 @@ $spacing: (
     padding-left: #{$value}px;
     padding-right: #{$value}px;
   }
+  .mt-#{$key}{
+    margin-top: #{$value}px ;
+  }
 }
 
 $size:(
