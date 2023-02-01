@@ -1,36 +1,77 @@
 .illustration-introduction {
+  position: relative;
   padding: 30px;
+
+  .illustration-intro {
+    z-index: 100;
+  }
+
+  .bg-image {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -5px;
+    @media (min-width: 998px) {
+      background-image: url(./../../../images/bg-curvy-desktop.svg);
+      background-position-x: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+    }
+
+    @media (min-width: 320px) {
+      background-image: url(./../../../images/bg-curvy-mobile.svg);
+      background-position-x: center;
+      background-size: 100%;
+
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+    }
+  }
+
+
+
   h1 {
     color: $White;
     font-size: 60px;
     text-align: center;
-    padding: 10px 123px;
-    @media(max-width: 576px){
-      padding: 0px 0px;
-      padding-top: 20px ;
+    z-index: 100;
+
+    @media (max-width: 576px) {
+      padding-top: 20px;
       font-size: 23px;
+      display: flex;
+    }
   }
-  }
-  p{
+
+  p {
     color: $White;
     font-size: 26px;
     text-align: center;
-    @media(max-width: 576px){
-      padding: 0px 0px;
-      padding-top: 20px ;
+    width: 56%;
+    z-index: 100;
+
+    @media (max-width: 576px) {
+      padding-top: 20px;
       font-size: 14px;
+      display: flex;
+      width: 100%;
+    }
   }
-  }
+
   .button-primary {
+    z-index: 100;
+
     .btn-primary {
       padding: 20px 120px;
       @include border;
-      @media(max-width: 576px){
+
+      @media (max-width: 576px) {
         padding: 15px 83px;
-       margin-top: 27px ;
+        margin-top: 27px;
         font-size: 14px;
-    }
+      }
     }
   }
 }
-
