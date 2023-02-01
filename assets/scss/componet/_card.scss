@@ -1,26 +1,55 @@
 .card-main-wrapper{
-    margin-bottom: 200px;
+    margin-bottom: 400px;
     @media(max-width: 576px){
         flex-direction: column;
+        margin-bottom: 250px;
+    }
+    @media(max-width: 1024px){
+        flex-direction: column;
+        
     }
     .card{
         width: 350px;
         height: 200px;
-        background-color: hsl(220deg 29% 18%);
+        background-color: $card-color;
         padding: 25px;
+        position: relative;
+       box-shadow: 5px 5px 1px $shadow-color;
+        @media(max-width: 1024px){
+            margin-bottom: 20px;
+            width: 600px;
+            height: 200px;
+            
+        }
         @media(max-width: 576px){
             margin-top: 20px;
             width: 280px;
             height: 180px;
-            padding: 16px;
+            padding: 13px;
+        }
+      
+        .quotes-image{
+            position: absolute;
+            width: 30px;
+            top: -24px;
+            left: 0;
+            z-index: 1;
+            // @media(max-width: 576px){
+            //     width: 30px;
+            //     top: -12px;
+            //     left: -15px;
+            // }
         }
         span{
             color: $White;
-            font-size: 12px;
+            font-size: 14px;
+            @media(max-width: 576px){
+                font-size: 11px;
+            }
         }
         .product-image{
-            width: 25px; 
-            height: 25px;
+            width: 40px; 
+            height: 40px;
             border-radius: 50px;
             overflow: hidden;
         }

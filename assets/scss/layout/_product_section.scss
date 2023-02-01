@@ -1,79 +1,135 @@
-.product-section{
+.product-section {
     padding: 30px;
-    background-color: hsl(217deg 27% 13%);
-    @media(max-width: 576px){
+    background-color:$main-background;
+
+    @media(max-width: 576px) {
         padding: 22px;
+
     }
-    .first-section{
-        @media(max-width: 576px){
+
+    .first-section {
+        color: $White;
+
+        @media(max-width: 576px) {
             flex-direction: column;
-            padding: 22px;
         }
-        .laptop{
-            h3{
-                color: $White;
-                text-align: center;
+
+        .laptop {
+            p {
+                width: 67%;
+                width: 63%;
+
+                @media(max-width: 576px) {
+                    width: 100%;
+                }
             }
-            p{
-                color: $White;
-                text-align: center;
+        }
+
+        .security {
+            @media(max-width: 576px) {
+                padding-top: 90px;
+
+            }
+
+            p {
+                width: 63%;
+                width: 63%;
+
+                @media(max-width: 576px) {
+                    width: 100%;
+
+                }
+            }
+        }
+
+    }
+
+    .second-section {
+        margin-top: 80px;
+        color: $White;
+
+        @media(max-width: 576px) {
+            flex-direction: column;
+            padding-top: 16px;
+        }
+
+        .icon-collaboration {
+            p {
+                width: 63%;
+
+                @media(max-width: 576px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .icon-any-file {
+            @media(max-width: 576px) {
+                padding-top: 90px;
+
+            }
+
+            p {
+                width: 55%;
+                width: 63%;
+
+                @media(max-width: 576px) {
+                    width: 100%;
+                }
+            }
+        }
+
+
+    }
+
+    .third-section {
+        margin-top: 80px;
+        color: $White;
+
+        @media(max-width: 576px) {
+            flex-direction: column;
+        }
+
+        .text-section {
+            width: 50%;
+            margin-left: 40px;
+
+            @media(max-width: 576px) {
+                width: 100%;
+                margin-left: 0px;
             }
             
-            
-        }
-        .security{
-            h3{
-                color: $White;
-                text-align: center;
+
+            h3 {
+                font-size: 54px;
+
+                @media(max-width: 576px) {
+                    font-size: 16px;
+                }
+                @media(max-width: 992px) {
+                    font-size: 34px;
+
+                }
+                @media(max-width: 1024px) {
+                    font-size: 24px;
+
+                }
             }
-            p{
-                color: $White;
-                text-align: center;
-            }
-        }
-    }
-    .second-section{
-        @media(max-width: 576px){
-            flex-direction: column;
-        }
-        .icon-collaboration{
-            h3{
-                color: $White;
-                text-align: center;
-            }
-            p{
-                color: $White;
-                text-align: center;
-            }
-        }
-        .icon-any-file{
-            h3{
-                color: $White;
-                text-align: center;
-            }
-            p{
-                color: $White;
-                text-align: center;
-            }
-        }
-    }
-    .third-section{
-        @media(max-width: 576px){
-            flex-direction: column;
-        }
-        .text-sectiom{
-            h3{
-                color: $White;
-                font-size: 17px;
-            }
-            p{
-                color: $White;
-                @media(max-width: 576px){
+
+            p {
+                font-size: 20px;
+
+                @media(max-width: 576px) {
                     font-size: 14px;
                 }
-               
+                @media(max-width: 1024px) {
+                    font-size: 15px;
+
+                }
+
             }
-            .flye-work-link{
+
+            .flye-work-link {
                 color: #297575;
             }
         }
