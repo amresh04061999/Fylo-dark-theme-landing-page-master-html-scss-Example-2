@@ -1,0 +1,29 @@
+header{
+    padding:62px;
+    @media(max-width: 576px){
+        padding: 20px;
+    }
+    .logo{
+        width: 10px;
+        & img {
+            width: 155px;
+            @media(max-width: 576px){
+                width: 72px;
+            }
+        }
+    }
+    .nav{
+       
+       .nav-item{
+        list-style: none;
+       .nav-link{
+        text-decoration: none;
+        color: white;
+        margin: 30px;
+        @media(max-width: 576px){
+            margin: 5px;
+        }
+       }
+       }
+    }
+}

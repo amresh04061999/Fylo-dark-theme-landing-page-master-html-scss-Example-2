@@ -1,13 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>
+    Frontend Mentor | Fylo landing page with dark theme and features grid
+  </title>
 </head>
+
 <body>
- 
+  <!-- main container -->
+  <div class="container h-100">
+    <!-- start header -->
+    <header class="header d-flex justify-content-between">
+
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo-image" />
+      </div>
+      <ul class="nav d-flex align-item-center">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" aria-label="feature">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" aria-label="team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" aria-label="Sign In">Sign In</a>
+        </li>
+      </ul>
+    </header>
+    <!-- end header -->
+    <!-- =================== start main ==================== -->
+    <main>
+      <!-- =================== Start illustration-intro ==================-->
+      <div class="illustration-introduction d-flex justify-content-center align-item-center flex-cloumn">
+        <div class="illustration-intro">
+          <img src="./images/illustration-intro.png" alt="illustration-intro-image" class="image-responsive" />
+        </div>
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p> Fylo stores all your most important files in one secure
+            location.Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+        <div class="button-primary">
+          <button class="btn-primary">Get Started</button>
+        </div>
+        <div class="bg-image"></div>
+      </div>
+      <!-- =================== End illustration-intro ==================-->
+
+      <!-- ===================main  section Product-section ==================-->
+      <section class="product-section">
+        <!-- ========================= first-section ====================== -->
+        <div class="first-section d-flex justify-content-around pt-3">
+          <div class="laptop d-flex align-item-center justify-content-between flex-cloumn">
+            <div class="laptop-image pb-1">
+              <img src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere-image" />
+            </div>
+           <h3 class="pt-2">Access your files, anywhere</h3>
+           <p class="pt-1">The ability to use a smartspanhone, tablet, or comspanuter to access your account means your files follow you everywhere.</p>
+          </div>
+          <div class="security d-flex align-item-center justify-content-between flex-cloumn mt-4">
+            <div class="security-image pb-1">
+              <img src="./images/icon-security.svg" alt="icon-security-image" />
+            </div>
+           <h3 class="pt-2">Security you can trust</h3>
+           <p class="pt-1">  2-factor authentication and user-controlled encryption are just a couple of the security 
+            features we allow to help secure your files.</p>
+          </div>
+        </div>
+        <!-- ========================= first-section ====================== -->
+        <!--============================= second-section ========================================-->
+        <div class="second-section d-flex justify-content-around pt-3">
+          <div class="icon-collaboration d-flex align-item-center justify-content-center flex-cloumn">
+            <div class="icon-collaboration-image pb-1">
+              <img src="./images/icon-collaboration.svg" alt="icon-collaboration-image" />
+            </div>
+       <h3 class="pt-2">
+        Real-time collaboration</h3>
+       <p class="pt-1">  Securely share files and folders with friends, family and colleagues for live collaboration. 
+        No email attachments required.</p>
+          </div>
+          <div class="icon-any-file d-flex align-item-center justify-content-between flex-cloumn mt-3">
+            <div class="file-image pb-1">
+              <img src="./images/icon-any-file.svg" alt="icon-any-file-image" />
+            </div>
+            <h3 class="pt-2">Store any type of file</h3>
+            <p class="pt-1">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+              file types to be securely stored and shared.</p>
+          </div>
+        </div>
+        <!--============================ end second-section ==================================-->
+        <!-- ============== productive section =============================-->
+        <section class="third-section d-flex justify-content-around align-item-center px-6">
+          <!-- image section -->
+          <div class="image-section">
+            <img src="./images/illustration-stay-productive.png" alt="stay-productive-image" class="image-responsive" />
+          </div>
+          <!--End  image section -->
+          <!-- text section -->
+          <div class="text-sectiom d-flex flex-cloumn  pt-5">
+            <h3 class="pt-1">  Stay productive, wherever you are</h3>
+            <p class="pt-1">Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+              storage needs.</p>
+            <p class="pt-1"> Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+              attachments required.</p>
+              <div class=" d-flex align-item-center pt-2">
+                <a href="index.html" aria-label="click here" class="flye-work-link ps-4 ">See how Fylo works
+                </a>
+                 <label><img src="./images/icon-arrow.svg" alt="Arrow-icon" /></label>
+              </div>
+         
+          </div>
+          <!--End  text section -->
+        </section>
+        <!-- ============== productive section =============================-->
+        <!--  start card wrapper  -->
+        <section class="card-main-wrapper d-flex justify-content-around align-item-center px-6 py-6">
+          <!--  first card -->
+          <div class="card">
+            <span>
+              Fylo has improved our team productivity by an order of
+              magnitude. Since making the switch our team has become a
+              well-oiled collaboration machine.
+            </span>
+            <!-- profile section  with name-->
+            <div class="d-flex pt-3">
+              <div class="product-image">
+                <img src="./images/profile-1.jpg" alt="profile-1" class="image-responsive" />
+              </div>
+              <div class="profile-text pl-1 d-flex flex-cloumn">
+                <span class="ps-1">Satish Patel</span>
+                <span>Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+          <!-- End first card -->
+
+          <!--  second card -->
+          <div class="card">
+            <span>
+              Fylo has improved our team productivity by an order of
+              magnitude. Since making the switch our team has become a
+              well-oiled collaboration machine.
+            </span>
+            <!-- profile section  with name-->
+            <div class="d-flex pt-3">
+              <div class="product-image">
+                <img src="./images/profile-2.jpg" alt="profile-3" class="image-responsive" />
+              </div>
+              <div class="profile-text pl-1 d-flex flex-cloumn">
+                <span>Satish Patel</span>
+                <span>Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+          <!-- End second card -->
+          <!--  third  card -->
+          <div class="card">
+            <span>
+              Fylo has improved our team productivity by an order of
+              magnitude. Since making the switch our team has become a
+              well-oiled collaboration machine.
+            </span>
+            <!-- profile section  with name-->
+            <div class="d-flex pt-3">
+              <div class="product-image">
+                <img src="./images/profile-3.jpg" alt="profile-3" class="image-responsive" />
+              </div>
+              <div class="profile-text pl-1 d-flex flex-cloumn">
+                <span>Satish Patel</span>
+                <span>Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+          <!-- End third  card -->
+        </section>
+        <!-- end start card wrapper  -->
+      </section>
+    </main>
+    <!--================================ End Main ================================= -->
+    <!--================================ Start footer section ================================= -->
+    <footer>
+      <!-- logo-text section -->
+      <div class="footer-wrapper d-flex justify-content-between">
+      <div class="first-footer-section">
+        <div class="logo-image">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <div class="d-flex px-3">
+          <div class="logo-image">
+            <img src="./images/icon-location.svg" alt="logo" />
+          </div>
+          <div class="py-2 d-flex flex-cloumn">
+           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua</p>
+          </div>
+        </div>
+      </div>
+      <!-- logo-text section -->
+      <!-- contact section -->
+      <div class="second-footer-section">
+        <div class="d-flex">
+          <div class="logo-image">
+            <img src="./images/icon-phone.svg" alt="logo" />
+          </div>
+          <label class="pl-2">+1-543-123-4567</label>
+        </div>
+        <div class="d-flex pt-2">
+          <div class="logo-image">
+            <img src="./images/icon-email.svg" alt="logo" />
+          </div>
+          <label class="pl-2">example@fylo.com</label>
+        </div>
+      </div>
+      <!-- end  contact section -->
+      <!-- nav -->
+      <ul class="mt-4">
+        <li>About Us</li>
+        <li>Jobs</li>
+        <li>Press</li>
+        <li>Blog</li>
+      </ul>
+      <ul  class="mt-4">
+        <li>Contact Us</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+      <!-- end nav -->
+      <!-- social media -->
+      <div class="d-flex">
+        <div class="social-media d-flex justify-content-center align-item-center">
+          <label for="" class="icon-facebook"></label>
+        </div>
+        <div class="social-media d-flex justify-content-center align-item-center">
+          <label for="" class="icon-instagram"></label>
+        </div>
+        <div class="social-media d-flex justify-content-center align-item-center">
+          <label for="" class="icon-twitter"></label>
+        </div>
+      </div>
+    </div>
+      <!-- end social media -->
+      <div class="footer-card d-flex justify-content-center align-item-center">
+        <div class="card1">
+          <h3>Get early access today</h3>
+          <p> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+            questions, our support team would be happy to help you.</p>
+            <div class=" button-section d-flex justify-content-center align-item-center">
+              <input type="text" placeholder="email@example.com">
+              <button class="btn-2 mt-3">Get Started For Free</button>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!--================================ End footer section ================================= -->
+  </div>
+
 </body>
+
 </html>

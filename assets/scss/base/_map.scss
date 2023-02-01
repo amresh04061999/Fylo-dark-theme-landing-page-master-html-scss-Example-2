@@ -1,0 +1,57 @@
+$spacing: (
+  0: 0,
+  1: 10,
+  2: 20,
+  3: 30,
+  4: 40,
+  5: 50,
+  6: 60,
+  7: 70,
+  8: 80,
+);
+@each $key, $value in $spacing {
+  .p-#{$key} {
+    padding: #{$value}px;
+  }
+  .pt-#{$key}{
+    padding-top: #{$value}px;
+  }
+  .pb-#{$key}{
+    padding-bottom: #{$value}px;
+  }
+  .pl-#{$key}{
+    padding-left: #{$value}px;
+  }
+  .pr-#{$key}{
+    padding-left: #{$value}px;
+  }
+  .px-#{$key}{
+    padding-top: #{$value}px;
+    padding-bottom: #{$value}px;
+  }
+  .py-#{$key}{
+    padding-left: #{$value}px;
+    padding-right: #{$value}px;
+  }
+  .mt-#{$key}{
+    margin-top: #{$value}px ;
+  }
+}
+
+$size:(
+  1: 10,
+  2: 12,
+  3: 14,
+  4: 20,
+  5: 30,
+  6: 40,
+  7: 50,
+  8: 60,
+);
+
+@each $key,$value in $size{
+  .ps-#{$key}{
+    font-size: #{$value}px;
+
+  }
+}

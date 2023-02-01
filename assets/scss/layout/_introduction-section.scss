@@ -1,0 +1,36 @@
+.illustration-introduction {
+  padding: 30px;
+  h1 {
+    color: $White;
+    font-size: 60px;
+    text-align: center;
+    padding: 10px 123px;
+    @media(max-width: 576px){
+      padding: 0px 0px;
+      padding-top: 20px ;
+      font-size: 23px;
+  }
+  }
+  p{
+    color: $White;
+    font-size: 26px;
+    text-align: center;
+    @media(max-width: 576px){
+      padding: 0px 0px;
+      padding-top: 20px ;
+      font-size: 14px;
+  }
+  }
+  .button-primary {
+    .btn-primary {
+      padding: 20px 120px;
+      @include border;
+      @media(max-width: 576px){
+        padding: 15px 83px;
+       margin-top: 27px ;
+        font-size: 14px;
+    }
+    }
+  }
+}
+

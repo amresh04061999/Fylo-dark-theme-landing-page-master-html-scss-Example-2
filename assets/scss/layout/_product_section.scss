@@ -1,0 +1,81 @@
+.product-section{
+    padding: 30px;
+    background-color: hsl(217deg 27% 13%);
+    @media(max-width: 576px){
+        padding: 22px;
+    }
+    .first-section{
+        @media(max-width: 576px){
+            flex-direction: column;
+            padding: 22px;
+        }
+        .laptop{
+            h3{
+                color: $White;
+                text-align: center;
+            }
+            p{
+                color: $White;
+                text-align: center;
+            }
+            
+            
+        }
+        .security{
+            h3{
+                color: $White;
+                text-align: center;
+            }
+            p{
+                color: $White;
+                text-align: center;
+            }
+        }
+    }
+    .second-section{
+        @media(max-width: 576px){
+            flex-direction: column;
+        }
+        .icon-collaboration{
+            h3{
+                color: $White;
+                text-align: center;
+            }
+            p{
+                color: $White;
+                text-align: center;
+            }
+        }
+        .icon-any-file{
+            h3{
+                color: $White;
+                text-align: center;
+            }
+            p{
+                color: $White;
+                text-align: center;
+            }
+        }
+    }
+    .third-section{
+        @media(max-width: 576px){
+            flex-direction: column;
+        }
+        .text-sectiom{
+            h3{
+                color: $White;
+                font-size: 17px;
+            }
+            p{
+                color: $White;
+                @media(max-width: 576px){
+                    font-size: 14px;
+                }
+               
+            }
+            .flye-work-link{
+                color: #297575;
+            }
+        }
+    }
+}
