@@ -779,7 +779,7 @@ footer .footer-wrapper {
 footer .footer-wrapper .first-footer-section span {
   color: hsl(0deg, 0%, 100%);
 }
-footer .footer-wrapper .second-footer-section label {
+footer .footer-wrapper .second-footer-section p {
   color: hsl(0deg, 0%, 100%);
 }
 footer .footer-wrapper ul {
@@ -824,7 +824,7 @@ footer .footer-wrapper .Wrapper-social-media .social-media {
   border: 2px solid hsl(0deg, 0%, 100%);
   margin-right: 10px;
 }
-footer .footer-wrapper .Wrapper-social-media .social-media label {
+footer .footer-wrapper .Wrapper-social-media .social-media p {
   font-size: 18px;
   color: white;
 }
