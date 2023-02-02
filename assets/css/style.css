@@ -1,4 +1,5 @@
 @import "../icon/style.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +14,7 @@ body {
 
 body {
   background-color: hsl(222deg, 26%, 15%);
+  font-family: "Open Sans", sans-serif;
 }
 
 .w-100 {
@@ -416,6 +418,30 @@ body {
     flex-direction: column;
   }
 }
+.card-main-wrapper .first-card-wrapper {
+  position: relative;
+}
+.card-main-wrapper .first-card-wrapper .card-one {
+  z-index: 100;
+}
+@media (max-width: 576px) {
+  .card-main-wrapper .first-card-wrapper .card-one {
+    margin-left: 0px;
+  }
+}
+.card-main-wrapper .first-card-wrapper .quotes-image {
+  width: 50px;
+  margin-top: -32px;
+  margin-left: -5px;
+  position: absolute;
+}
+@media (max-width: 576px) {
+  .card-main-wrapper .first-card-wrapper .quotes-image {
+    width: 30px;
+    margin-left: 0px;
+    margin-top: -3px;
+  }
+}
 .card-main-wrapper .card {
   width: 350px;
   height: 200px;
@@ -438,13 +464,6 @@ body {
     height: 180px;
     padding: 13px;
   }
-}
-.card-main-wrapper .card .quotes-image {
-  position: absolute;
-  width: 30px;
-  top: -24px;
-  left: 0;
-  z-index: 1;
 }
 .card-main-wrapper .card span {
   color: hsl(0deg, 0%, 100%);
@@ -491,6 +510,7 @@ header .nav .nav-item .nav-link {
   text-decoration: none;
   color: white;
   margin: 30px;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 576px) {
   header .nav .nav-item .nav-link {
@@ -532,9 +552,10 @@ header .nav .nav-item .nav-link {
 }
 .illustration-introduction h1 {
   color: hsl(0deg, 0%, 100%);
-  font-size: 60px;
+  font-size: 64px;
   text-align: center;
   z-index: 100;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 576px) {
   .illustration-introduction h1 {
@@ -594,9 +615,18 @@ header .nav .nav-item .nav-link {
     flex-direction: column;
   }
 }
+.product-section .first-section .laptop h2 {
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 576px) {
+  .product-section .first-section .laptop h2 {
+    font-size: 22px;
+  }
+}
 .product-section .first-section .laptop p {
   width: 67%;
   width: 63%;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 576px) {
   .product-section .first-section .laptop p {
@@ -608,9 +638,13 @@ header .nav .nav-item .nav-link {
     padding-top: 90px;
   }
 }
+.product-section .first-section .security h2 {
+  font-family: "Raleway", sans-serif;
+}
 .product-section .first-section .security p {
   width: 63%;
   width: 63%;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 576px) {
   .product-section .first-section .security p {
@@ -627,8 +661,12 @@ header .nav .nav-item .nav-link {
     padding-top: 16px;
   }
 }
+.product-section .second-section .icon-collaboration h2 {
+  font-family: "Raleway", sans-serif;
+}
 .product-section .second-section .icon-collaboration p {
   width: 63%;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 576px) {
   .product-section .second-section .icon-collaboration p {
@@ -640,9 +678,13 @@ header .nav .nav-item .nav-link {
     padding-top: 90px;
   }
 }
+.product-section .second-section .icon-any-file h2 {
+  font-family: "Raleway", sans-serif;
+}
 .product-section .second-section .icon-any-file p {
   width: 55%;
   width: 63%;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 576px) {
   .product-section .second-section .icon-any-file p {
@@ -669,12 +711,8 @@ header .nav .nav-item .nav-link {
   }
 }
 .product-section .third-section .text-section h3 {
-  font-size: 54px;
-}
-@media (max-width: 576px) {
-  .product-section .third-section .text-section h3 {
-    font-size: 16px;
-  }
+  font-size: 62px;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 992px) {
   .product-section .third-section .text-section h3 {
@@ -684,6 +722,11 @@ header .nav .nav-item .nav-link {
 @media (max-width: 1024px) {
   .product-section .third-section .text-section h3 {
     font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .product-section .third-section .text-section h3 {
+    font-size: 18px;
   }
 }
 .product-section .third-section .text-section p {
@@ -757,7 +800,7 @@ footer .footer-wrapper ul {
 footer .footer-wrapper ul li {
   margin-bottom: 10px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   footer .footer-wrapper .Wrapper-social-media {
     margin-top: 20px;
     display: flex;
@@ -765,7 +808,7 @@ footer .footer-wrapper ul li {
     justify-content: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   footer .footer-wrapper .Wrapper-social-media {
     margin-top: 20px;
     display: flex;
@@ -807,12 +850,14 @@ footer .footer-wrapper .Wrapper-social-media .social-media label {
     flex-direction: column;
     padding: 25px 10px 35px 10px;
     width: 90%;
+    top: -180px;
   }
 }
 .card1 h3 {
   text-align: center;
   color: hsl(0deg, 0%, 100%);
   font-size: 40px;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 576px) {
   .card1 h3 {
@@ -847,6 +892,16 @@ footer .footer-wrapper .Wrapper-social-media .social-media label {
   border: none;
   margin-right: 20px;
 }
+@media (max-width: 1024px) {
+  .card1 .button-section input[type=text] {
+    padding: 20px 140px 20px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .card1 .button-section input[type=text] {
+    padding: 20px 140px 20px 20px;
+  }
+}
 @media (max-width: 576px) {
   .card1 .button-section input[type=text] {
     padding: 15px 60px 15px 20px;
@@ -864,7 +919,7 @@ footer .footer-wrapper .Wrapper-social-media .social-media label {
 }
 @media (max-width: 768px) {
   .card1 .button-section .btn-2 {
-    padding: 20px 80px;
+    padding: 20px 100px;
     margin-top: 30px;
   }
 }
