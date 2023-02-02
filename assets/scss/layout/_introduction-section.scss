@@ -5,7 +5,7 @@
   .illustration-intro {
     z-index: 100;
   }
-
+// bg image
   .bg-image {
     height: 600px;
     width: 100%;
@@ -34,9 +34,10 @@
 
   h1 {
     color: $White;
-    font-size: 60px;
+    font-size: 64px;
     text-align: center;
     z-index: 100;
+    font-family: $Heading-font-family;
 
     @media (max-width: 576px) {
       padding-top: 20px;

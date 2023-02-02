@@ -2,28 +2,32 @@ footer {
     background-color: hsl(214deg 49% 9%);
     padding: 200px 60px 100px 60px;
     position: relative;
+
     @media(max-width: 768px) {
         padding: 118px;
-     }
+    }
+
     @media(max-width: 576px) {
         padding: 65px 26px 51px 27px;
     }
-    
+
 
     .footer-wrapper {
         margin-top: 110px;
+
         @media(max-width: 768px) {
             flex-direction: column;
         }
+
         @media(max-width: 576px) {
             flex-direction: column;
             padding: 100px 10px 100px 10px;
             margin-top: 10px;
         }
-       
+
         .first-footer-section {
 
-            span{
+            span {
                 color: $White;
             }
         }
@@ -38,9 +42,11 @@ footer {
             list-style: none;
             color: $White;
             flex-direction: column;
+
             @media(max-width: 768px) {
                 margin-top: 20px
             }
+
             @media(max-width: 576px) {
                 margin-top: 20px
             }
@@ -49,19 +55,22 @@ footer {
                 margin-bottom: 10px;
             }
         }
+
         .Wrapper-social-media {
-            @media(max-width: 576px) {
-                margin-top: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
             @media(max-width: 768px) {
                 margin-top: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
+
+            @media(max-width: 576px) {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
 
 
             .social-media {
@@ -94,31 +103,36 @@ footer {
     transform: translateX(-50%);
     top: -200px;
     box-shadow: 10px 10px 1px $shadow-color;
+
     @media(max-width: 768px) {
         top: -300px;
     }
+
     @media(max-width: 576px) {
         flex-direction: column;
         padding: 25px 10px 35px 10px;
         width: 90%;
+        top: -180px;
     }
-   
+
 
     h3 {
         text-align: center;
         color: $White;
         font-size: 40px;
-
+        font-family: $Heading-font-family;
         @media(max-width: 576px) {
             font-size: 18px;
         }
     }
+
     p {
         padding-top: 10px;
         padding-bottom: 40px;
         text-align: center;
         color: $White;
         font-size: 18px;
+
         @media(max-width: 576px) {
             font-size: 14px;
         }
@@ -128,6 +142,7 @@ footer {
         @media(max-width: 768px) {
             flex-direction: column;
         }
+
         @media(max-width: 576px) {
             flex-direction: column;
         }
@@ -138,6 +153,14 @@ footer {
             border: none;
             margin-right: 20px;
 
+            @media(max-width: 1024px) {
+                padding: 20px 140px 20px 20px;
+            }
+
+            @media(max-width: 768px) {
+                padding: 20px 140px 20px 20px;
+            }
+
             @media(max-width: 576px) {
                 padding: 15px 60px 15px 20px;
                 margin-right: 0px;
@@ -145,14 +168,16 @@ footer {
         }
 
         .btn-2 {
-            
+
             padding: 20px 40px;
             font-size: 15px !important;
             @include border;
+
             @media(max-width: 768px) {
-                padding: 20px 80px;
+                padding: 20px 100px;
                 margin-top: 30px;
             }
+
             @media(max-width: 576px) {
                 padding: 15px 55px;
                 margin-top: 30px;

@@ -8,6 +8,27 @@
         flex-direction: column;
         
     }
+    .first-card-wrapper{
+        position: relative;
+        .card-one{
+            z-index: 100;
+            @media(max-width: 576px){
+                margin-left: 0px;
+            }
+        }
+        .quotes-image{
+            width: 50px;
+            margin-top: -32px;
+            margin-left: -5px;
+            position: absolute;
+            @media(max-width: 576px){
+                width: 30px;
+                margin-left: 0px;
+                margin-top: -3px;
+            }
+        }
+    }
+    
     .card{
         width: 350px;
         height: 200px;
@@ -19,26 +40,12 @@
             margin-bottom: 20px;
             width: 600px;
             height: 200px;
-            
         }
         @media(max-width: 576px){
             margin-top: 20px;
             width: 280px;
             height: 180px;
             padding: 13px;
-        }
-      
-        .quotes-image{
-            position: absolute;
-            width: 30px;
-            top: -24px;
-            left: 0;
-            z-index: 1;
-            // @media(max-width: 576px){
-            //     width: 30px;
-            //     top: -12px;
-            //     left: -15px;
-            // }
         }
         span{
             color: $White;

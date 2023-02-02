@@ -1,3 +1,6 @@
+// font family
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
 // universal style
 * {
     padding: 0;
@@ -13,7 +16,8 @@ body {
 }
 
 body {
-    background-color:$bg-color
+    background-color: $bg-color;
+    font-family: $body-font-family;
 }
 
 // helper class
@@ -43,7 +47,6 @@ body {
 
 .flex-cloumn {
     flex-direction: column;
-
 }
 
 .align-item-center {

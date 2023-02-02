@@ -1,92 +1,101 @@
 .product-section {
     padding: 30px;
-    background-color:$main-background;
+    background-color: $main-background;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
         padding: 22px;
-
     }
 
     .first-section {
         color: $White;
 
-        @media(max-width: 576px) {
+        @media (max-width: 576px) {
             flex-direction: column;
         }
 
         .laptop {
+            h2 {
+                font-family: $Heading-font-family;
+                @media (max-width: 576px) {
+                    font-size: 22px;
+                }
+            }
             p {
                 width: 67%;
                 width: 63%;
-
-                @media(max-width: 576px) {
+                font-family: $Heading-font-family;
+                @media (max-width: 576px) {
                     width: 100%;
                 }
             }
         }
 
         .security {
-            @media(max-width: 576px) {
+            @media (max-width: 576px) {
                 padding-top: 90px;
-
+            }
+            h2 {
+                font-family: $Heading-font-family;
             }
 
             p {
                 width: 63%;
                 width: 63%;
+                font-family: $Heading-font-family;
 
-                @media(max-width: 576px) {
+                @media (max-width: 576px) {
                     width: 100%;
-
                 }
             }
         }
-
     }
 
     .second-section {
         margin-top: 80px;
         color: $White;
 
-        @media(max-width: 576px) {
+        @media (max-width: 576px) {
             flex-direction: column;
             padding-top: 16px;
         }
 
         .icon-collaboration {
+            h2 {
+                font-family: $Heading-font-family;
+            }
             p {
                 width: 63%;
-
-                @media(max-width: 576px) {
+                font-family: $Heading-font-family;
+                @media (max-width: 576px) {
                     width: 100%;
                 }
             }
         }
 
         .icon-any-file {
-            @media(max-width: 576px) {
+            @media (max-width: 576px) {
                 padding-top: 90px;
-
+            }
+            h2 {
+                font-family: $Heading-font-family;
             }
 
             p {
                 width: 55%;
                 width: 63%;
-
-                @media(max-width: 576px) {
+                font-family: $Heading-font-family;
+                @media (max-width: 576px) {
                     width: 100%;
                 }
             }
         }
-
-
     }
 
     .third-section {
         margin-top: 80px;
         color: $White;
 
-        @media(max-width: 576px) {
+        @media (max-width: 576px) {
             flex-direction: column;
         }
 
@@ -94,39 +103,35 @@
             width: 50%;
             margin-left: 40px;
 
-            @media(max-width: 576px) {
+            @media (max-width: 576px) {
                 width: 100%;
                 margin-left: 0px;
             }
-            
 
             h3 {
-                font-size: 54px;
+                font-size: 62px;
 
-                @media(max-width: 576px) {
-                    font-size: 16px;
-                }
-                @media(max-width: 992px) {
+                font-family: $Heading-font-family;
+                @media (max-width: 992px) {
                     font-size: 34px;
-
                 }
-                @media(max-width: 1024px) {
+                @media (max-width: 1024px) {
                     font-size: 24px;
-
+                }
+                @media (max-width: 576px) {
+                    font-size: 18px;
                 }
             }
 
             p {
                 font-size: 20px;
 
-                @media(max-width: 576px) {
+                @media (max-width: 576px) {
                     font-size: 14px;
                 }
-                @media(max-width: 1024px) {
+                @media (max-width: 1024px) {
                     font-size: 15px;
-
                 }
-
             }
 
             .flye-work-link {

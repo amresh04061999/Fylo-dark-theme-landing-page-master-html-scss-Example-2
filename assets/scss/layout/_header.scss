@@ -20,6 +20,7 @@ header{
         text-decoration: none;
         color: white;
         margin: 30px;
+        font-family: $Heading-font-family;
         @media(max-width: 576px){
             margin: 5px;
         }
