@@ -13,7 +13,7 @@
     bottom: 0;
     margin-bottom: -5px;
     @media (min-width: 998px) {
-      background-image: url(./../../../images/bg-curvy-desktop.svg);
+      background-image: url(./../../images/bg-curvy-desktop.svg);
       background-position-x: center;
       background-size: 100%;
       background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     }
 
     @media (min-width: 320px) {
-      background-image: url(./../../../images/bg-curvy-mobile.svg);
+      background-image: url(./../../images/bg-curvy-mobile.svg);
       background-position-x: center;
       background-size: 100%;
 
